@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    runtime: node
+    name: benev-bot
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeployTrigger: commit
